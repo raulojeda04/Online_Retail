@@ -131,6 +131,6 @@ Below is the Overview Summary page from the PowerBI dashboard, which can be down
 
 ### Assumptions
 
-* **Handling of Non-Product Codes**: Transactions with operational 'StockCodes' (e.g., 'POST for postage, 'M' for Manual, 'D' for discount) were removed from the final table during the cleaning process. This was done under the assumption that these entries had no tangible sales and would only skew order volume and sales trends. 
+* **Handling of Non-Product Codes**: Transactions with operational 'StockCodes' (e.g., 'POST' for postage, 'M' for Manual, 'D' for discount) were removed from the final table during the cleaning process. This was done under the assumption that these entries had no tangible sales and would only skew order volume and sales trends. 
 
 * **Outlier Handling**: Statistical outliers identified by the IQR method, based on the `Price` were not automatically removed from the data set. Instead, a percentile-based approach was used to delete only the extreme values.
